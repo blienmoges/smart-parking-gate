@@ -12,6 +12,7 @@ from ultralytics import YOLO
 from paddleocr import PaddleOCR
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+os.environ["YOLO_CONFIG_DIR"] = "/tmp/Ultralytics"
 
 app = FastAPI(
     title="SmartParking Gate",
@@ -45,9 +46,18 @@ JSON_DIR = "json"
 os.makedirs(JSON_DIR, exist_ok=True)
 
 # -------- INITIALIZE MODELS --------
-model = YOLO(WEIGHTS_PATH)
-ocr = PaddleOCR(use_angle_cls=True, use_gpu=False, lang=OCR_LANG)
+# model = YOLO(WEIGHTS_PATH)
+# ocr = PaddleOCR(use_angle_cls=True, use_gpu=False, lang=OCR_LANG)
+# -------- INITIALIZE MODELS --------
+model = None
+ocr = None
 
+def load_models():
+    global model, ocr
+    if model is None:
+        model = YOLO(WEIGHTS_PATH)
+    if ocr is None:
+        ocr = PaddleOCR(use_angle_cls=True, use_gpu=False, lang=OCR_LANG)
 
 def init_database():
     conn = sqlite3.connect(DB_PATH)
@@ -208,7 +218,7 @@ async def predict_plate(file: UploadFile = File(...), authorization: str = Heade
     # AUTHORIZATION CHECK
     if authorization != MY_SECRET_KEY:
         raise HTTPException(status_code=401, detail="Unauthorized Hardware Key")
-
+    load_models()
     contents = await file.read()
     nparr = np.frombuffer(contents, np.uint8)
     frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
