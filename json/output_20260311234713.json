@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-11T23:47:11.016031",
+  "End Time": "2026-03-11T23:47:13.139581",
+  "Detections": [
+    {
+      "plate_number": "R94529A",
+      "owner": "blien",
+      "status": "Access Granted",
+      "confidence_score": 0.8776,
+      "method": "yolo_crop"
+    }
+  ]
+}

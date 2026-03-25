@@ -1,0 +1,11 @@
+{
+  "Start Time": "2026-03-11T23:10:41.364257",
+  "End Time": "2026-03-11T23:10:45.502578",
+  "Detections": [
+    {
+      "plate_number": "R94529A",
+      "confidence_score": 0.8776,
+      "method": "yolo_crop"
+    }
+  ]
+}

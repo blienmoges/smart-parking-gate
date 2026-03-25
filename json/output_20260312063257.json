@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T06:32:56.183186",
+  "End Time": "2026-03-12T06:32:57.202441",
+  "Detections": [
+    {
+      "plate_number": "08170326",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.967,
+      "method": "yolo_crop"
+    }
+  ]
+}

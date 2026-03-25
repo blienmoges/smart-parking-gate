@@ -1,0 +1,20 @@
+{
+  "Start Time": "2026-03-25T04:21:09.050489",
+  "End Time": "2026-03-25T04:21:09.847113",
+  "Detections": [
+    {
+      "plate_number": "0123456",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9905,
+      "method": "yolo_crop"
+    },
+    {
+      "plate_number": "0123456H",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9417,
+      "method": "yolo_crop"
+    }
+  ]
+}

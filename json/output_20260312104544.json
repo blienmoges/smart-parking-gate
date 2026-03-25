@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T10:45:42.888377",
+  "End Time": "2026-03-12T10:45:44.394552",
+  "Detections": [
+    {
+      "plate_number": "A45699",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9958,
+      "method": "full_image_ocr"
+    }
+  ]
+}

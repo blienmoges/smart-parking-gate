@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-11T23:44:37.313429",
+  "End Time": "2026-03-11T23:44:39.748593",
+  "Detections": [
+    {
+      "plate_number": "0RA50036A",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9428,
+      "method": "full_image_ocr"
+    }
+  ]
+}

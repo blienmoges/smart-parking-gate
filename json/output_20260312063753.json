@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T06:37:52.348176",
+  "End Time": "2026-03-12T06:37:53.922396",
+  "Detections": [
+    {
+      "plate_number": "RA69614A",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9673,
+      "method": "full_image_ocr"
+    }
+  ]
+}

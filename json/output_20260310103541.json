@@ -1,0 +1,11 @@
+{
+  "Start Time": "2026-03-10T10:35:40.611240",
+  "End Time": "2026-03-10T10:35:41.555697",
+  "Detections": [
+    {
+      "plate_number": "SN66XMZ",
+      "confidence_score": 0.9082,
+      "method": "yolo_crop"
+    }
+  ]
+}

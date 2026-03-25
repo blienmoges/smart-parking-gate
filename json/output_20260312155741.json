@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T15:57:39.804690",
+  "End Time": "2026-03-12T15:57:41.815524",
+  "Detections": [
+    {
+      "plate_number": "A45699",
+      "owner": "bb",
+      "status": "Access Granted",
+      "confidence_score": 0.9958,
+      "method": "full_image_ocr"
+    }
+  ]
+}

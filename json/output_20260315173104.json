@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-15T17:30:53.781782",
+  "End Time": "2026-03-15T17:31:04.129568",
+  "Detections": [
+    {
+      "plate_number": "11880A",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9609,
+      "method": "full_image_ocr"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Start Time": "2026-03-11T23:04:41.943428",
+  "End Time": "2026-03-11T23:04:46.020082",
+  "Detections": [
+    {
+      "plate_number": "A45699",
+      "confidence_score": 0.9958,
+      "method": "full_image_ocr"
+    }
+  ]
+}

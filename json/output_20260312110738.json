@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T11:07:37.251351",
+  "End Time": "2026-03-12T11:07:38.580583",
+  "Detections": [
+    {
+      "plate_number": "R10378A",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9076,
+      "method": "full_image_ocr"
+    }
+  ]
+}

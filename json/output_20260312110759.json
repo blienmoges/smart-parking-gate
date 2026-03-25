@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T11:07:57.348739",
+  "End Time": "2026-03-12T11:07:59.534476",
+  "Detections": [
+    {
+      "plate_number": "23741A",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9545,
+      "method": "full_image_ocr"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T06:35:13.526083",
+  "End Time": "2026-03-12T06:35:14.702051",
+  "Detections": [
+    {
+      "plate_number": "29622A",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9796,
+      "method": "full_image_ocr"
+    }
+  ]
+}

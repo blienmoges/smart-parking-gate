@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T11:39:42.208018",
+  "End Time": "2026-03-12T11:39:43.199689",
+  "Detections": [
+    {
+      "plate_number": "SN66XMZ",
+      "owner": "nahom",
+      "status": "Access Granted",
+      "confidence_score": 0.9082,
+      "method": "yolo_crop"
+    }
+  ]
+}

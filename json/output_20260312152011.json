@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-12T15:19:56.167687",
+  "End Time": "2026-03-12T15:20:11.119048",
+  "Detections": [
+    {
+      "plate_number": "B04341A",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9551,
+      "method": "full_image_ocr"
+    }
+  ]
+}

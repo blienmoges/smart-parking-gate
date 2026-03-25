@@ -1,0 +1,20 @@
+{
+  "Start Time": "2026-03-12T11:07:08.009917",
+  "End Time": "2026-03-12T11:07:08.990351",
+  "Detections": [
+    {
+      "plate_number": "A75162",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.9992,
+      "method": "full_image_ocr"
+    },
+    {
+      "plate_number": "0NNAA",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.72,
+      "method": "full_image_ocr"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Start Time": "2026-03-25T04:22:00.249293",
+  "End Time": "2026-03-25T04:22:00.862175",
+  "Detections": [
+    {
+      "plate_number": "RA34244A",
+      "owner": "Unknown Vehicle",
+      "status": "Access Denied",
+      "confidence_score": 0.8727,
+      "method": "yolo_crop"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Start Time": "2026-03-10T13:28:54.440292",
+  "End Time": "2026-03-10T13:28:55.736547",
+  "Detections": [
+    {
+      "plate_number": "200301R",
+      "confidence_score": 0.8569,
+      "method": "yolo_crop"
+    },
+    {
+      "plate_number": "00301R",
+      "confidence_score": 0.8354,
+      "method": "yolo_crop"
+    }
+  ]
+}
