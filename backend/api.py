@@ -8,8 +8,8 @@ import json
 import sqlite3
 import base64
 from datetime import datetime
-from ultralytics import YOLO
-from paddleocr import PaddleOCR
+# from ultralytics import YOLO
+# from paddleocr import PaddleOCR
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 os.environ["YOLO_CONFIG_DIR"] = "/tmp/Ultralytics"
@@ -54,11 +54,18 @@ ocr = None
 
 def load_models():
     global model, ocr
-    if model is None:
-        model = YOLO(WEIGHTS_PATH)
-    if ocr is None:
-        ocr = PaddleOCR(use_angle_cls=True, use_gpu=False, lang=OCR_LANG)
 
+    if model is None:
+        print("Loading YOLO...", flush=True)
+        from ultralytics import YOLO
+        model = YOLO(WEIGHTS_PATH)
+        print("YOLO loaded", flush=True)
+
+    if ocr is None:
+        print("Loading PaddleOCR...", flush=True)
+        from paddleocr import PaddleOCR
+        ocr = PaddleOCR(use_angle_cls=True, use_gpu=False, lang=OCR_LANG)
+        print("PaddleOCR loaded", flush=True)
 def init_database():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
@@ -315,3 +322,6 @@ def get_plates():
     rows = cursor.fetchall()
     conn.close()
     return {"data": [{"id": r[0], "timestamp": r[2], "plate_number": r[3], "confidence": r[4], "method": r[5]} for r in rows]}
+@app.on_event("startup")
+async def startup_event():
+    print("FastAPI startup complete", flush=True)
