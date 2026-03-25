@@ -3,6 +3,6 @@ uvicorn
 python-multipart
 numpy==1.26.4
 opencv-contrib-python==4.6.0.66
-paddlepaddle<3
+paddlepaddle==2.6.2
 paddleocr==2.7.3
 ultralytics
